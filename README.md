@@ -1,5 +1,5 @@
 # RunUnoRun
-This is a simple hamster fitness tracker. Simlply attach a TCRT5000 sensor module to your hamster wheel, paint a white stripe on it and bingo. You will need a ThingSpeak account to make this work. It will look like [this](https://thingspeak.com/channels/770699). 
+This is a simple hamster fitness tracker I built with my kids. Simlply attach a TCRT5000 sensor module to your hamster wheel, paint a white stripe on it and bingo. You will need a ThingSpeak account to make this work. It will look like [this](https://thingspeak.com/channels/770699). 
 
 # Parts used
 * Hamster wheel
