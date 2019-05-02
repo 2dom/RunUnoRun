@@ -57,7 +57,7 @@ void setup() {
 void loop() {
   delay(5000);
 
-  // Uno has inactive for 6 hours and has finished his exercise routine  
+  // Uno has been inactive for 6 hours and has finished his exercise routine  
   if ((millis()-lap_start)>1000*60*60*6)
       lap_count=0;
       uno_speed=0;
