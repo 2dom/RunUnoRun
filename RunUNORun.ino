@@ -4,14 +4,14 @@
 
 
 
-
+#define distance_per_revolution 0.4
 #define debug
 
-const char* ssid     = "asdfddsfa"; // Your SSID (Name of your WiFi)
-const char* password = "asfasfsdafd"; //Your Wifi password
+const char* ssid     = "dsfafsda"; // Your SSID (Name of your WiFi)
+const char* password = "asfdsdf"; //Your Wifi password
 
 const char* host = "api.thingspeak.com";
-String api_key = "afsadfs"; // Your API Key provied by thingspeak
+String api_key = "asfdsaddsdaf"; // Your API Key provied by thingspeak
 
 float uno_speed, uno_distance; //Variables for the BME280 Sensor
 unsigned long lap_count=0;
@@ -56,13 +56,17 @@ void setup() {
 
 void loop() {
   delay(5000);
-  if ((millis()-lap_start)>1000*60*60*1asy)
+
+  // Uno has inactive for 6 hours and has finished his exercise routine  
+  if ((millis()-lap_start)>1000*60*60*6)
       lap_count=0;
-  if (int_fired)
-  {
+      uno_speed=0;
+      uno_distance=0;
       
-    uno_speed=(float)400 / (float)lap_time;
-    uno_distance=(float)lap_count * 0.4;
+  if (int_fired)
+  {     
+    uno_speed=distance_per_revolution*1000 / (float)lap_time;
+    uno_distance=(float)lap_count * distance_per_revolution;
     int_fired=false;
   
   }
