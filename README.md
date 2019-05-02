@@ -1,5 +1,5 @@
 # RunUnoRun
-This is a simple hamster fitness tracker I built with my kids. Simlply attach a TCRT5000 infrared trigger module to your hamster wheel, paint a white stripe on it and bingo. You will need a ThingSpeak account to make this work. It will look like [this](https://thingspeak.com/channels/770699). 
+This is a simple fitness tracker I built with my kids for our hamster UNO. Simlply attach a TCRT5000 infrared trigger module to your hamster wheel and ESP8266 (pin 5), paint a white stripe on the wheel and bingo. You will need a ThingSpeak account to make this work. It will look like [this](https://thingspeak.com/channels/770699). 
 
 # Parts used
 * Hamster wheel
